@@ -1,10 +1,8 @@
 package org.example;
 
-
-import java.io.*;
 import java.util.Scanner;
 
-public class Main {
+public class BOJ1157 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String word = sc.next().toUpperCase();
@@ -37,4 +35,3 @@ public class Main {
         }
     }
 }
-
