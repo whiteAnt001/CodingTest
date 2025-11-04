@@ -1,10 +1,8 @@
 package org.example;
 
+import java.util.Scanner;
 
-import java.io.*;
-import java.util.*;
-
-public class Main {
+public class BOJ4659 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
