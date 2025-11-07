@@ -1,10 +1,9 @@
 package org.example;
 
+import java.util.Arrays;
+import java.util.Scanner;
 
-import java.io.*;
-import java.util.*;
-
-public class Main {
+public class BOJ1940 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -37,4 +36,3 @@ public class Main {
         System.out.println(count);
     }
 }
-
