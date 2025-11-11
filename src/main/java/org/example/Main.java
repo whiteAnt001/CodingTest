@@ -9,16 +9,37 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
-        sc.nextLine();
-        Set<Integer> set = new TreeSet<>();
+        String[] str = new String[n];
 
-        for(int i = 0; i < n; i++ ) {
-            String m = sc.next();
-            set.add(Integer.parseInt(m));
-        }
+        Stack<Integer> stack = new Stack<>();
+        for (int i = 0; i < n; i++) {
+            str[i] = sc.next();
 
-        for(int num : set) {
-            System.out.print(num + " ");
+            if (str[i].equals("push")) {
+                int num = sc.nextInt();
+                stack.push(num);
+            }
+
+            if (str[i].equals("pop")){
+                if (stack.empty()) {
+                    System.out.println(-1);
+                } else {
+                    System.out.println(stack.pop());
+                }
+            }
+            if (str[i].equals("size")){
+                System.out.println(stack.size());
+            }
+            if (str[i].equals("empty")){
+                System.out.println(stack.empty() ? 1 : 0);
+            }
+            if (str[i].equals("top")){
+                if (stack.empty()) {
+                    System.out.println(-1);
+                } else {
+                    System.out.println(stack.peek());
+                }
+            }
         }
     }
 }
