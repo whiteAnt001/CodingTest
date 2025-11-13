@@ -1,10 +1,10 @@
 package org.example;
 
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Scanner;
 
-import java.io.*;
-import java.util.*;
-
-public class Main {
+public class BOJ10845 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -57,4 +57,3 @@ public class Main {
         }
     }
 }
-
