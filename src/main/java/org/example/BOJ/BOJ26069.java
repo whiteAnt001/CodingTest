@@ -1,4 +1,4 @@
-package org.example;
+package org.example.BOJ;
 
 import java.util.HashSet;
 import java.util.Scanner;
