@@ -3,21 +3,28 @@ import java.util.Scanner;
 
 public class Solution {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String a = sc.next();
+        Solution sol = new Solution();
+        int result = sol.solution("<", "=", 20, 50);
+        System.out.println(result); // 1
 
-        StringBuilder sb = new StringBuilder();
+        result = sol.solution(">", "!", 41, 78);
+        System.out.println(result); // 0
+    }
 
-        for(char ch : a.toCharArray()) {
-            if(Character.isUpperCase(ch)) {
-                sb.append(Character.toLowerCase(ch));
-            } else if (Character.isLowerCase(ch)) {
-                sb.append(Character.toUpperCase(ch));
-            } else {
-                sb.append(ch);
-            }
+    public int solution(String ineq, String eq, int n, int m) {
+        int answer = 0;
+
+
+        switch (ineq + eq) {
+            case ">=":
+                return n>=m ? 1 : 0;
+            case "<=":
+                return n<=m ? 1 : 0;
+            case ">!":
+                return n>m ? 1 : 0;
+            case "<!":
+                return n<m ? 1 : 0;
         }
-
-        System.out.println(sb);
+        return 0;
     }
 }
